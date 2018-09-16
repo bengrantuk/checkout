@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300,400|Muli" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="red">
+    <button style="margin-bottom: 50px;" onclick="document.body.classList.toggle('red');document.body.classList.toggle('green')">Swap colour scheme (changes class on body)</button>
+    <nav>
+        <ul>
+            <li class="step-1 current"><a href="#">Tickets</a></li>
+            <li class="step-2"><a href="#">Payment</a></li>
+            <li class="step-3"><a href="#">Confirmation</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h1>Select Tickets</h1>
+
+        <div class="ticket-table">
+            <div class="title-row">
+                <div class="item">Type</div>
+                <div class="price">Unit Price</div>
+                <div class="quantity">Quantity</div>
+            </div>
+            <div class="row first-row">
+                <div class="item">
+                    <div>Adult (over 16)</div>
+                </div>
+                <div class="price">
+                    <div>£20</div>
+                </div>
+                <div class="quantity">
+                    <div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div>Under 16</div>
+                </div>
+                <div class="price">
+                    <div>£14</div>
+                </div>
+                <div class="quantity">
+                    <div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div>Family Ticket</div>
+                </div>
+                <div class="price">
+                    <div>£55</div>
+                </div>
+                <div class="quantity">
+                    <div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div>Concession</div>
+                </div>
+                <div class="price">
+                    <div>£14</div>
+                </div>
+                <div class="quantity">
+                    <div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div>Student</div>
+                </div>
+                <div class="price">
+                    <div>£20</div>
+                </div>
+                <div class="quantity">
+                    <div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div>Under 5 (no seat)</div>
+                </div>
+                <div class="price">
+                    <div>FREE</div>
+                </div>
+                <div class="quantity">
+                    <div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="two-buttons">
+            <div>
+                <div class="select blue white">
+                    <input type="text" value="Choose a date">
+                </div>
+            </div>
+            <div>
+                <div class="select accent white">
+                    <select name="" id="">
+                        <option value="0">Choose a time</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="extras">
+            <p>Would you like a guidebook for extra information during your tour?</p>
+            <div class="ticket-table">
+                <div class="row first-row">
+                    <div class="item">
+                        <div>Guidebook</div>
+                    </div>
+                    <div class="price">
+                        <div>£5</div>
+                    </div>
+                    <div class="quantity">
+                        <div>
+                            <div class="select">
+                                <select name="" id="">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="total-and-payment">
+            <div class="row">
+                    <div class="booking-fee-label">Booking Fee<br>(1 per order)</div>
+                    <div class="booking-fee">£5</div>
+            </div>
+            <div class="row total-row">
+                    <div class="total-label">Total</div>
+                    <div class="total">£64</div>  
+            </div>
+            
+            <button>Proceed to secure payment</button>
+            <img src="https://lionreserve.co/static/uploads/cc_logos.jpg" alt="">
+        </div>
+
+
+    </main>
+</body>
+
+</html>
