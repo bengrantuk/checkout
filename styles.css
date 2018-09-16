@@ -50,9 +50,12 @@ nav ul li {
   opacity: 0.6;
 }
 
-nav ul li a {
+nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:visited {
   text-decoration: none;
-  color: white;
+  color: white !important;
+  /* this needs !important because otherwise it is overridden by smallbusiness.css */
+  position: relative;
+  top: -1px;
 }
 
 nav ul li.current {
@@ -73,7 +76,7 @@ nav ul li:before {
   border: 1px solid white;
   left: -30px;
   top: 1px;
-  font-size: 17px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -254,12 +257,12 @@ nav ul .step-3:before {
   padding-bottom: 10px;
 }
 
-.ticket-table .row > div > div {
+.ticket-table .checkout-row > div > div {
   line-height: 2;
   height: 100%;
 }
 
-.ticket-table .row {
+.ticket-table .checkout-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,25 +274,25 @@ nav ul .step-3:before {
   border-bottom: 1px solid #cccccc;
 }
 
-.ticket-table .row.first-row {
+.ticket-table .checkout-row.first-row {
   border-top: 1px solid #cccccc;
 }
 
 @media (max-width: 670px) {
-  .ticket-table .row {
+  .ticket-table .checkout-row {
     font-size: 13px;
   }
-  .ticket-table .row > div > div {
+  .ticket-table .checkout-row > div > div {
     line-height: 2.5;
   }
 }
 
-.ticket-table .row > div {
+.ticket-table .checkout-row > div {
   padding: 10px 0 10px 0;
 }
 
-.ticket-table .row .item,
-.ticket-table .row .price {
+.ticket-table .checkout-row .item,
+.ticket-table .checkout-row .price {
   font-weight: bolder;
   color: #121d40;
 }
@@ -359,7 +362,7 @@ nav ul .step-3:before {
   float: right;
 }
 
-.total-and-payment .row {
+.total-and-payment .checkout-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,31 +370,31 @@ nav ul .step-3:before {
   margin-bottom: 20px;
 }
 
-.total-and-payment .row .booking-fee-label {
+.total-and-payment .checkout-row .booking-fee-label {
   font-size: 14px;
 }
 
-.total-and-payment .row .booking-fee {
+.total-and-payment .checkout-row .booking-fee {
   margin-top: 5px;
 }
 
-.total-and-payment .row div:first-of-type {
+.total-and-payment .checkout-row div:first-of-type {
   width: 150px;
   text-align: center;
 }
 
-.total-and-payment .row div:last-of-type {
+.total-and-payment .checkout-row div:last-of-type {
   width: 70px;
   text-align: center;
 }
 
-.total-and-payment .row.total-row {
+.total-and-payment .checkout-row.total-row {
   border-top: 1px solid #cccccc;
   padding-top: 30px;
 }
 
-.total-and-payment .row .total-label,
-.total-and-payment .row .total {
+.total-and-payment .checkout-row .total-label,
+.total-and-payment .checkout-row .total {
   font-size: 18px;
   font-weight: bold;
 }
@@ -574,7 +577,7 @@ nav ul .step-3:before {
   margin-bottom: 15px;
 }
 
-.payment .payment-container .order-summary .row > div {
+.payment .payment-container .order-summary .checkout-row > div {
   display: inline-block;
 }
 
@@ -591,7 +594,7 @@ nav ul .step-3:before {
   font-weight: 300;
 }
 
-.payment .payment-container .order-summary .summary .row {
+.payment .payment-container .order-summary .summary .checkout-row {
   margin-bottom: 5px;
 }
 
@@ -609,7 +612,7 @@ nav ul .step-3:before {
 
 .payment .payment-container .order-summary .change-selection {
   display: block;
-  color: white;
+  color: white !important;
   text-decoration: none;
   text-align: center;
   padding: 15px;
@@ -726,44 +729,44 @@ nav ul .step-3:before {
       flex-basis: 70%;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row {
+.payment .payment-container .review-and-pay .form-table > .checkout-row {
   margin-bottom: 20px;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row input, .payment .payment-container .review-and-pay .form-table > .row select {
+.payment .payment-container .review-and-pay .form-table > .checkout-row input, .payment .payment-container .review-and-pay .form-table > .checkout-row select {
   background: white;
   border: solid thin #eaeaea;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row input:focus, .payment .payment-container .review-and-pay .form-table > .row select:focus {
+.payment .payment-container .review-and-pay .form-table > .checkout-row input:focus, .payment .payment-container .review-and-pay .form-table > .checkout-row select:focus {
   border-color: #c1bcbc;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row input {
+.payment .payment-container .review-and-pay .form-table > .checkout-row input {
   width: 100%;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row input::-webkit-input-placeholder {
+.payment .payment-container .review-and-pay .form-table > .checkout-row input::-webkit-input-placeholder {
   color: lightgray;
   font-weight: 300;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row input:-ms-input-placeholder {
+.payment .payment-container .review-and-pay .form-table > .checkout-row input:-ms-input-placeholder {
   color: lightgray;
   font-weight: 300;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row input::-ms-input-placeholder {
+.payment .payment-container .review-and-pay .form-table > .checkout-row input::-ms-input-placeholder {
   color: lightgray;
   font-weight: 300;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row input::placeholder {
+.payment .payment-container .review-and-pay .form-table > .checkout-row input::placeholder {
   color: lightgray;
   font-weight: 300;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row label {
+.payment .payment-container .review-and-pay .form-table > .checkout-row label {
   display: block;
   font-size: 14px;
   font-weight: 600;
@@ -771,38 +774,42 @@ nav ul .step-3:before {
   margin-bottom: 5px;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row .select, .payment .payment-container .review-and-pay .form-table > .row .text-select {
+.payment .payment-container .review-and-pay .form-table > .checkout-row .select, .payment .payment-container .review-and-pay .form-table > .checkout-row .text-select {
   height: 36px;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row .full-width {
+.payment .payment-container .review-and-pay .form-table > .checkout-row .full-width {
   width: 100%;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row .full-width.email {
+.payment .payment-container .review-and-pay .form-table > .checkout-row .full-width.email {
   margin-top: 10px;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row .inline-block {
+.payment .payment-container .review-and-pay .form-table > .checkout-row .inline-block {
   display: inline-block;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row .month-width {
+.payment .payment-container .review-and-pay .form-table > .checkout-row .month-width {
   width: 30%;
   min-width: 140px;
   margin-right: 10px;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row .year-width {
+.payment .payment-container .review-and-pay .form-table > .checkout-row .year-width {
   width: 100px;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row .ccv-width {
+.payment .payment-container .review-and-pay .form-table > .checkout-row .ccv-width {
   width: 70px;
 }
 
-.payment .payment-container .review-and-pay .form-table > .row .ccv-img {
+.payment .payment-container .review-and-pay .form-table > .checkout-row .ccv-img {
   margin-left: 10px;
+}
+
+.payment .payment-container .review-and-pay .form-table > .checkout-row .ccv-img img {
+  vertical-align: initial;
 }
 
 .payment .payment-container .review-and-pay .finish-and-pay {
@@ -826,7 +833,7 @@ nav ul .step-3:before {
   background: #da0612;
 }
 
-.payment .summary .row, .confirmation .summary .row {
+.payment .summary .checkout-row, .confirmation .summary .checkout-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -836,7 +843,7 @@ nav ul .step-3:before {
   border-bottom: 1px solid #cccccc;
 }
 
-.payment .summary .row .item, .payment .summary .row .price, .confirmation .summary .row .item, .confirmation .summary .row .price {
+.payment .summary .checkout-row .item, .payment .summary .checkout-row .price, .confirmation .summary .checkout-row .item, .confirmation .summary .checkout-row .price {
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: bold;
